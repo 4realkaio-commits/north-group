@@ -1,41 +1,43 @@
 
 import Link from "next/link";
 
+const portfolioUrl = "https://north-group-portfolio.vercel.app/";
+
 const services = [
   {
     number: "01",
-    title: "Sites estratégicos",
+    title: "Sites e sistemas",
     description:
-      "Sites profissionais para fortalecer sua marca, transmitir confiança e transformar visitantes em oportunidades.",
-    tag: "PRESENÇA DIGITAL",
+      "Sites e sistemas personalizados para fortalecer sua presença digital e otimizar operações.",
+    tag: "TECNOLOGIA E DESENVOLVIMENTO",
   },
   {
     number: "02",
-    title: "CRM e gestão de leads",
+    title: "IA e automação",
     description:
-      "Organização de contatos, estruturação do funil comercial e acompanhamento de oportunidades.",
-    tag: "PROCESSO COMERCIAL",
+      "Soluções inteligentes para automatizar tarefas e tornar processos mais eficientes.",
+    tag: "INTELIGÊNCIA ARTIFICIAL",
   },
   {
     number: "03",
-    title: "Posicionamento de marca",
+    title: "Marketing e posicionamento",
     description:
-      "Uma comunicação estratégica para diferenciar sua empresa e fortalecer sua presença no mercado.",
-    tag: "MARCA E ESTRATÉGIA",
+      "Estratégias digitais para fortalecer sua marca e ampliar sua presença no mercado.",
+    tag: "MARCA E CRESCIMENTO",
   },
   {
     number: "04",
-    title: "Conteúdo e marketing",
+    title: "Estratégia comercial",
     description:
-      "Planejamento de conteúdo e estratégias digitais alinhados aos objetivos do seu negócio.",
-    tag: "CRESCIMENTO DIGITAL",
+      "Organização de leads, processos de atendimento e oportunidades de conversão.",
+    tag: "PROCESSO COMERCIAL",
   },
   {
     number: "05",
-    title: "Gestão empresarial",
+    title: "Gestão e performance",
     description:
-      "Mais clareza sobre processos, indicadores e oportunidades para apoiar decisões melhores.",
-    tag: "GESTÃO E PERFORMANCE",
+      "Análise de processos e indicadores para identificar gargalos e orientar decisões.",
+    tag: "GESTÃO EMPRESARIAL",
   },
 ];
 
@@ -79,7 +81,7 @@ export default function HomePage() {
             </span>
           </Link>
 
-          <nav className="hidden items-center gap-8 md:flex">
+          <nav className="hidden items-center gap-6 md:flex lg:gap-8">
             <a href="#sobre" className="text-xs text-white/55 transition hover:text-white">
               Sobre
             </a>
@@ -88,6 +90,14 @@ export default function HomePage() {
             </a>
             <a href="#processo" className="text-xs text-white/55 transition hover:text-white">
               Processo
+            </a>
+            <a
+              href={portfolioUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-white transition hover:text-white/65"
+            >
+              Portfólio ↗
             </a>
           </nav>
 
@@ -136,7 +146,7 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-10 max-w-[470px] text-sm leading-7 text-white/55 sm:text-base sm:leading-8">
-              Estratégia, estrutura e execução para empresas que querem
+              Estratégia, tecnologia e execução para empresas que querem
               crescer com mais direção, organização e clareza.
             </p>
 
@@ -206,7 +216,7 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 border-t border-white/10">
           <div className="mx-auto flex max-w-[1400px] items-center justify-between px-5 py-5 sm:px-8 lg:px-12">
             <span className="text-[8px] uppercase tracking-[0.22em] text-white/35 sm:text-[9px]">
-              Estratégia. Estrutura. Crescimento.
+              Estratégia. Tecnologia. Crescimento.
             </span>
             <a href="#sobre" className="text-[9px] uppercase tracking-[0.18em] text-white/40 transition hover:text-white">
               Explore ↓
@@ -238,8 +248,8 @@ export default function HomePage() {
             <p className="mt-8 max-w-[690px] text-sm leading-7 text-white/55 sm:text-base sm:leading-8">
               A NORTH GROUP atua ao lado de empresas que buscam evoluir.
               Analisamos necessidades, identificamos oportunidades e
-              estruturamos soluções que conectam presença digital, organização
-              comercial e gestão empresarial.
+              estruturamos soluções que conectam presença digital, tecnologia,
+              organização comercial e gestão empresarial.
             </p>
             <p className="mt-5 max-w-[690px] text-sm leading-7 text-white/55 sm:text-base sm:leading-8">
               Cada negócio tem uma realidade diferente. Por isso, nosso
@@ -275,7 +285,7 @@ export default function HomePage() {
               </h2>
             </div>
             <p className="max-w-[360px] text-sm leading-7 text-white/45">
-              Diferentes frentes de atuação, conectadas a um mesmo objetivo:
+              Estratégia, tecnologia e execução conectadas a um mesmo objetivo:
               ajudar sua empresa a evoluir com mais estrutura.
             </p>
           </div>
@@ -284,7 +294,7 @@ export default function HomePage() {
             {services.map((service) => (
               <article
                 key={service.number}
-                className="group flex min-h-[285px] flex-col bg-[#050505] p-7 transition-colors duration-300 hover:bg-[#0c0c0c] sm:p-9"
+                className="group flex min-h-[250px] flex-col bg-[#050505] p-7 transition-colors duration-300 hover:bg-[#0c0c0c] sm:p-9"
               >
                 <div className="flex items-start justify-between">
                   <span className="text-xs text-white/35">{service.number}</span>
@@ -292,14 +302,14 @@ export default function HomePage() {
                     ↗
                   </span>
                 </div>
-                <div className="mt-12">
+                <div className="mt-9">
                   <span className="text-[8px] uppercase tracking-[0.2em] text-white/35">
                     {service.tag}
                   </span>
                   <h3 className="mt-3 text-xl font-medium tracking-[-0.035em] sm:text-2xl">
                     {service.title}
                   </h3>
-                  <p className="mt-4 text-sm leading-6 text-white/45">
+                  <p className="mt-3 text-sm leading-6 text-white/45">
                     {service.description}
                   </p>
                 </div>
@@ -310,7 +320,7 @@ export default function HomePage() {
               href={whatsappUrl}
               target="_blank"
               rel="noreferrer"
-              className="group flex min-h-[285px] flex-col justify-between bg-[#050505] p-7 text-white transition-colors duration-300 hover:bg-[#0c0c0c] sm:p-9"
+              className="group flex min-h-[250px] flex-col justify-between bg-[#050505] p-7 text-white transition-colors duration-300 hover:bg-[#0c0c0c] sm:p-9"
             >
               <div className="flex items-start justify-between">
                 <span className="text-xs text-white/35">06</span>
@@ -320,10 +330,13 @@ export default function HomePage() {
               </div>
               <div>
                 <h3 className="max-w-[250px] text-3xl font-light leading-tight tracking-[-0.05em] sm:text-4xl">
-                  Sua empresa precisa de outra solução?
+                  Sua empresa precisa evoluir?
                 </h3>
-                <p className="mt-5 text-[10px] uppercase tracking-[0.15em] text-white/45">
-                  Vamos conversar →
+                <p className="mt-4 text-sm leading-6 text-white/45">
+                  Vamos identificar oportunidades para o seu negócio.
+                </p>
+                <p className="mt-5 text-[10px] uppercase tracking-[0.15em] text-white/65">
+                  Fale com a North →
                 </p>
               </div>
             </a>
@@ -331,7 +344,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="processo" className="scroll-mt-24 border-b border-white/10 px-5 py-24 sm:px-8 sm:py-32 lg:px-12">
+      <section
+        id="processo"
+        className="scroll-mt-24 border-b border-white/10 px-5 py-24 sm:px-8 sm:py-32 lg:px-12"
+      >
         <div className="mx-auto max-w-[1400px]">
           <div className="flex items-center gap-3">
             <span className="h-px w-7 bg-white/70" />
@@ -351,7 +367,10 @@ export default function HomePage() {
 
             <div className="divide-y divide-white/10">
               {steps.map((step) => (
-                <article key={step.number} className="grid gap-4 py-7 first:pt-0 sm:grid-cols-[65px_1fr] sm:gap-6">
+                <article
+                  key={step.number}
+                  className="grid gap-4 py-7 first:pt-0 sm:grid-cols-[65px_1fr] sm:gap-6"
+                >
                   <span className="text-xs text-white/35">{step.number}</span>
                   <div>
                     <h3 className="text-xl tracking-[-0.03em] sm:text-2xl">
@@ -365,6 +384,69 @@ export default function HomePage() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      <section
+        id="portfolio"
+        className="relative overflow-hidden border-b border-white/10 px-5 py-24 sm:px-8 sm:py-32 lg:px-12"
+      >
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 opacity-20"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)",
+            backgroundSize: "80px 80px",
+          }}
+        />
+
+        <div className="relative mx-auto grid max-w-[1400px] gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
+          <div>
+            <div className="flex items-center gap-3">
+              <span className="h-px w-7 bg-white/70" />
+              <span className="text-[9px] uppercase tracking-[0.25em] text-white/45">
+                04 / Nosso portfólio
+              </span>
+            </div>
+
+            <h2 className="mt-8 max-w-[850px] text-4xl font-light leading-[0.98] tracking-[-0.065em] sm:text-6xl lg:text-7xl">
+              IDEIAS QUE
+              <br />
+              <span className="text-white/35">GANHAM FORMA.</span>
+            </h2>
+
+            <p className="mt-7 max-w-[590px] text-sm leading-7 text-white/50 sm:text-base sm:leading-8">
+              Conheça projetos desenvolvidos pela NORTH GROUP, explore
+              soluções digitais e veja como transformamos ideias em
+              experiências online.
+            </p>
+          </div>
+
+          <a
+            href={portfolioUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex min-h-[180px] flex-col justify-between border border-white/20 bg-white/[0.02] p-7 transition duration-300 hover:border-white/60 hover:bg-white/[0.045] sm:p-9"
+          >
+            <div className="flex items-start justify-between">
+              <span className="text-[9px] uppercase tracking-[0.2em] text-white/40">
+                NORTH GROUP / PROJECTS
+              </span>
+              <span className="text-2xl text-white/50 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-white">
+                ↗
+              </span>
+            </div>
+
+            <div className="mt-10">
+              <h3 className="text-2xl font-light tracking-[-0.04em] sm:text-3xl">
+                Explore nossos projetos.
+              </h3>
+              <p className="mt-4 inline-flex items-center gap-3 text-[10px] font-medium uppercase tracking-[0.16em] text-white/70 transition group-hover:text-white">
+                Conheça nosso portfólio <span>→</span>
+              </p>
+            </div>
+          </a>
         </div>
       </section>
 
@@ -433,6 +515,14 @@ export default function HomePage() {
               <Link href="/termos" className="transition hover:text-white">
                 Termos de Uso
               </Link>
+              <a
+                href={portfolioUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-white"
+              >
+                Portfólio ↗
+              </a>
               <a
                 href="https://www.instagram.com/northgroupp/"
                 target="_blank"
