@@ -63,7 +63,7 @@ const steps = [
 ];
 
 const whatsappUrl =
-  "https://wa.me/5513974015844?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20NORTH%20GROUP%20e%20quero%20conhecer%20as%20solu%C3%A7%C3%B5es.";
+  "https://wa.me/551333967048?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20NORTH%20GROUP%20e%20quero%20conhecer%20as%20solu%C3%A7%C3%B5es.";
 
 export default function HomePage() {
   return (
@@ -539,4 +539,5 @@ export default function HomePage() {
     </main>
   );
 }
+
 
