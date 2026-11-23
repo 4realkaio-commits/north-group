@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://northgroupglobal.com.br/sitemap.xml",
+    sitemap: "https://www.northgroupglobal.com.br/sitemap.xml",
   };
 }
