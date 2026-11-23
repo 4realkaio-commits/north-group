@@ -5,7 +5,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Termos de Uso | NORTH GROUP",
   description:
-    "Consulte os termos de uso do site da NORTH GROUP.",
+    "Consulte os termos de uso e as condições de utilização do site da NORTH GROUP.",
+  alternates: {
+    canonical: "/termos",
+  },
 };
 
 const sections = [

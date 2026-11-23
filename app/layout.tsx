@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -15,10 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://northgroupglobal.com.br"),
 
-  title: "NORTH GROUP | Assessoria de Crescimento Empresarial",
+  title: "Criação de Sites e Sistemas para Empresas | NORTH GROUP",
 
   description:
-    "Soluções em tecnologia, sistemas personalizados, automações e estratégias digitais para empresas que querem crescer.",
+    "Criamos sites profissionais, sistemas personalizados e automações para empresas. Também desenvolvemos estratégias de marketing digital para impulsionar resultados.",
 
   applicationName: "NORTH GROUP",
 
@@ -40,16 +40,16 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: "https://northgroupglobal.com.br",
     siteName: "NORTH GROUP",
-    title: "NORTH GROUP | Assessoria de Crescimento Empresarial",
+    title: "Criação de Sites e Sistemas para Empresas | NORTH GROUP",
     description:
-      "Estratégia, tecnologia e execução para impulsionar o crescimento de empresas.",
+      "Sites profissionais, sistemas personalizados, automações e estratégias de marketing digital para empresas.",
   },
 
   twitter: {
     card: "summary",
-    title: "NORTH GROUP | Assessoria de Crescimento Empresarial",
+    title: "Criação de Sites e Sistemas para Empresas | NORTH GROUP",
     description:
-      "Estratégia, tecnologia e execução para impulsionar o crescimento de empresas.",
+      "Sites profissionais, sistemas personalizados, automações e estratégias de marketing digital para empresas.",
   },
 
   robots: {
@@ -64,6 +64,14 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "NORTH GROUP",
+  url: "https://northgroupglobal.com.br",
+  description:
+    "Criação de sites profissionais, desenvolvimento de sistemas personalizados, automações e estratégias de marketing digital para empresas.",
+};
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -74,6 +82,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
         {children}
       </body>
     </html>

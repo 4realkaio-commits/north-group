@@ -146,8 +146,7 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-10 max-w-[470px] text-sm leading-7 text-white/55 sm:text-base sm:leading-8">
-              Estratégia, tecnologia e execução para empresas que querem
-              crescer com mais direção, organização e clareza.
+              A NORTH GROUP oferece criação de sites profissionais, desenvolvimento de sistemas personalizados, automação de processos e estratégias de marketing digital para empresas que querem crescer.
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">

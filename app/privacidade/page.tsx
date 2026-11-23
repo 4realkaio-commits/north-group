@@ -1,3 +1,15 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Política de Privacidade | NORTH GROUP",
+  description:
+    "Conheça a política de privacidade da NORTH GROUP e saiba como tratamos os dados enviados pelo site.",
+  alternates: {
+    canonical: "/privacidade",
+  },
+};
+
+
 
 export default function PrivacyPage() {
   return (
