@@ -1,4 +1,4 @@
-﻿
+
 import Link from "next/link";
 
 const portfolioUrl = "https://north-group-portfolio.vercel.app/";
@@ -8,57 +8,57 @@ const services = [
     number: "01",
     title: "Sites e sistemas",
     description:
-      "Sites e sistemas personalizados para fortalecer sua presenÃ§a digital e otimizar operaÃ§Ãµes.",
+      "Sites e sistemas personalizados para fortalecer sua presença digital e otimizar operações.",
     tag: "TECNOLOGIA E DESENVOLVIMENTO",
   },
   {
     number: "02",
-    title: "IA e automaÃ§Ã£o",
+    title: "IA e automação",
     description:
-      "SoluÃ§Ãµes inteligentes para automatizar tarefas e tornar processos mais eficientes.",
-    tag: "INTELIGÃŠNCIA ARTIFICIAL",
+      "Soluções inteligentes para automatizar tarefas e tornar processos mais eficientes.",
+    tag: "INTELIGÊNCIA ARTIFICIAL",
   },
   {
     number: "03",
     title: "Marketing e posicionamento",
     description:
-      "EstratÃ©gias digitais para fortalecer sua marca e ampliar sua presenÃ§a no mercado.",
+      "Estratégias digitais para fortalecer sua marca e ampliar sua presença no mercado.",
     tag: "MARCA E CRESCIMENTO",
   },
   {
     number: "04",
-    title: "EstratÃ©gia comercial",
+    title: "Estratégia comercial",
     description:
-      "OrganizaÃ§Ã£o de leads, processos de atendimento e oportunidades de conversÃ£o.",
+      "Organização de leads, processos de atendimento e oportunidades de conversão.",
     tag: "PROCESSO COMERCIAL",
   },
   {
     number: "05",
-    title: "GestÃ£o e performance",
+    title: "Gestão e performance",
     description:
-      "AnÃ¡lise de processos e indicadores para identificar gargalos e orientar decisÃµes.",
-    tag: "GESTÃƒO EMPRESARIAL",
+      "Análise de processos e indicadores para identificar gargalos e orientar decisões.",
+    tag: "GESTÃO EMPRESARIAL",
   },
 ];
 
 const steps = [
   {
     number: "01",
-    title: "DiagnÃ³stico",
+    title: "Diagnóstico",
     description:
-      "Entendemos o momento da empresa, seus desafios e os pontos que merecem atenÃ§Ã£o.",
+      "Entendemos o momento da empresa, seus desafios e os pontos que merecem atenção.",
   },
   {
     number: "02",
-    title: "EstratÃ©gia",
+    title: "Estratégia",
     description:
-      "Definimos prioridades e construÃ­mos um plano de aÃ§Ã£o alinhado Ã  realidade do negÃ³cio.",
+      "Definimos prioridades e construímos um plano de ação alinhado à realidade do negócio.",
   },
   {
     number: "03",
-    title: "ExecuÃ§Ã£o",
+    title: "Execução",
     description:
-      "Transformamos o planejamento em aÃ§Ãµes prÃ¡ticas, acompanhando a evoluÃ§Ã£o e ajustando o que for necessÃ¡rio.",
+      "Transformamos o planejamento em ações práticas, acompanhando a evolução e ajustando o que for necessário.",
   },
 ];
 
@@ -86,7 +86,7 @@ export default function HomePage() {
               Sobre
             </a>
             <a href="#servicos" className="text-xs text-white/55 transition hover:text-white">
-              SoluÃ§Ãµes
+              Soluções
             </a>
             <a href="#processo" className="text-xs text-white/55 transition hover:text-white">
               Processo
@@ -97,7 +97,7 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="text-xs text-white transition hover:text-white/65"
             >
-              PortfÃ³lio â†—
+              Portfólio ↗
             </a>
           </nav>
 
@@ -108,7 +108,7 @@ export default function HomePage() {
             className="group inline-flex min-h-[44px] items-center justify-between gap-3 border border-white/40 bg-[#050505] px-4 py-3 text-[9px] font-medium uppercase tracking-[0.16em] text-white transition hover:border-white hover:bg-[#111111] sm:px-5"
           >
             <span>Fale com a North</span>
-            <span>â†—</span>
+            <span>↗</span>
           </a>
         </div>
       </header>
@@ -142,12 +142,12 @@ export default function HomePage() {
             <h1 className="max-w-[850px] text-[clamp(3.5rem,9vw,8.5rem)] font-light leading-[0.83] tracking-[-0.085em]">
               SUA EMPRESA.
               <br />
-              <span className="text-white/35">OUTRO NÃVEL.</span>
+              <span className="text-white/35">OUTRO NÍVEL.</span>
             </h1>
 
             <p className="mt-10 max-w-[470px] text-sm leading-7 text-white/55 sm:text-base sm:leading-8">
-              EstratÃ©gia, tecnologia e execuÃ§Ã£o para empresas que querem
-              crescer com mais direÃ§Ã£o, organizaÃ§Ã£o e clareza.
+              Estratégia, tecnologia e execução para empresas que querem
+              crescer com mais direção, organização e clareza.
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -159,7 +159,7 @@ export default function HomePage() {
               >
                 <span>Vamos conversar</span>
                 <span className="text-base transition-transform group-hover:translate-x-1">
-                  â†’
+                  →
                 </span>
               </a>
 
@@ -167,8 +167,8 @@ export default function HomePage() {
                 href="#servicos"
                 className="inline-flex min-h-[60px] items-center justify-between gap-8 border border-white/20 bg-[#050505] px-6 py-5 text-[10px] uppercase tracking-[0.15em] text-white/70 transition hover:border-white/60 hover:bg-[#0c0c0c] hover:text-white"
               >
-                ConheÃ§a as soluÃ§Ãµes
-                <span>â†“</span>
+                Conheça as soluções
+                <span>↓</span>
               </a>
             </div>
           </div>
@@ -188,10 +188,10 @@ export default function HomePage() {
 
             <div className="absolute right-2 top-16 max-w-[155px] border border-white/10 bg-[#050505] p-4">
               <p className="text-[8px] uppercase tracking-[0.2em] text-white/40">
-                Nossa direÃ§Ã£o
+                Nossa direção
               </p>
               <p className="mt-2 text-xs leading-5 text-white/85">
-                EstratÃ©gia que sai do papel.
+                Estratégia que sai do papel.
               </p>
             </div>
 
@@ -216,10 +216,10 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 border-t border-white/10">
           <div className="mx-auto flex max-w-[1400px] items-center justify-between px-5 py-5 sm:px-8 lg:px-12">
             <span className="text-[8px] uppercase tracking-[0.22em] text-white/35 sm:text-[9px]">
-              EstratÃ©gia. Tecnologia. Crescimento.
+              Estratégia. Tecnologia. Crescimento.
             </span>
             <a href="#sobre" className="text-[9px] uppercase tracking-[0.18em] text-white/40 transition hover:text-white">
-              Explore â†“
+              Explore ↓
             </a>
           </div>
         </div>
@@ -235,26 +235,26 @@ export default function HomePage() {
               </span>
             </div>
             <p className="mt-8 max-w-[260px] text-sm leading-7 text-white/40">
-              NÃ£o basta trabalhar mais. Ã‰ preciso saber onde sua empresa quer
+              Não basta trabalhar mais. É preciso saber onde sua empresa quer
               chegar e o que precisa mudar para isso acontecer.
             </p>
           </div>
 
           <div>
             <h2 className="max-w-[850px] text-3xl font-light leading-tight tracking-[-0.055em] sm:text-5xl lg:text-6xl">
-              Crescimento nÃ£o acontece por acaso.
-              <span className="text-white/35"> Ele precisa de direÃ§Ã£o.</span>
+              Crescimento não acontece por acaso.
+              <span className="text-white/35"> Ele precisa de direção.</span>
             </h2>
             <p className="mt-8 max-w-[690px] text-sm leading-7 text-white/55 sm:text-base sm:leading-8">
               A NORTH GROUP atua ao lado de empresas que buscam evoluir.
               Analisamos necessidades, identificamos oportunidades e
-              estruturamos soluÃ§Ãµes que conectam presenÃ§a digital, tecnologia,
-              organizaÃ§Ã£o comercial e gestÃ£o empresarial.
+              estruturamos soluções que conectam presença digital, tecnologia,
+              organização comercial e gestão empresarial.
             </p>
             <p className="mt-5 max-w-[690px] text-sm leading-7 text-white/55 sm:text-base sm:leading-8">
-              Cada negÃ³cio tem uma realidade diferente. Por isso, nosso
-              trabalho comeÃ§a entendendo o seu momento, antes de definir quais
-              aÃ§Ãµes fazem sentido.
+              Cada negócio tem uma realidade diferente. Por isso, nosso
+              trabalho começa entendendo o seu momento, antes de definir quais
+              ações fazem sentido.
             </p>
             <a
               href={whatsappUrl}
@@ -262,7 +262,7 @@ export default function HomePage() {
               rel="noreferrer"
               className="group mt-9 inline-flex items-center gap-5 border-b border-white/30 pb-3 text-[10px] uppercase tracking-[0.16em] transition hover:border-white"
             >
-              Entenda como podemos ajudar <span>â†’</span>
+              Entenda como podemos ajudar <span>→</span>
             </a>
           </div>
         </div>
@@ -279,13 +279,13 @@ export default function HomePage() {
                 </span>
               </div>
               <h2 className="mt-8 text-4xl font-light tracking-[-0.065em] sm:text-6xl lg:text-7xl">
-                SOLUÃ‡Ã•ES
+                SOLUÇÕES
                 <br />
-                <span className="text-white/35">COM DIREÃ‡ÃƒO.</span>
+                <span className="text-white/35">COM DIREÇÃO.</span>
               </h2>
             </div>
             <p className="max-w-[360px] text-sm leading-7 text-white/45">
-              EstratÃ©gia, tecnologia e execuÃ§Ã£o conectadas a um mesmo objetivo:
+              Estratégia, tecnologia e execução conectadas a um mesmo objetivo:
               ajudar sua empresa a evoluir com mais estrutura.
             </p>
           </div>
@@ -299,7 +299,7 @@ export default function HomePage() {
                 <div className="flex items-start justify-between">
                   <span className="text-xs text-white/35">{service.number}</span>
                   <span className="text-xl text-white/30 transition group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-white">
-                    â†—
+                    ↗
                   </span>
                 </div>
                 <div className="mt-9">
@@ -325,7 +325,7 @@ export default function HomePage() {
               <div className="flex items-start justify-between">
                 <span className="text-xs text-white/35">06</span>
                 <span className="text-xl text-white/50 transition-transform group-hover:translate-x-1 group-hover:text-white">
-                  â†—
+                  ↗
                 </span>
               </div>
               <div>
@@ -333,10 +333,10 @@ export default function HomePage() {
                   Sua empresa precisa evoluir?
                 </h3>
                 <p className="mt-4 text-sm leading-6 text-white/45">
-                  Vamos identificar oportunidades para o seu negÃ³cio.
+                  Vamos identificar oportunidades para o seu negócio.
                 </p>
                 <p className="mt-5 text-[10px] uppercase tracking-[0.15em] text-white/65">
-                  Fale com a North â†’
+                  Fale com a North →
                 </p>
               </div>
             </a>
@@ -406,7 +406,7 @@ export default function HomePage() {
             <div className="flex items-center gap-3">
               <span className="h-px w-7 bg-white/70" />
               <span className="text-[9px] uppercase tracking-[0.25em] text-white/45">
-                04 / Nosso portfÃ³lio
+                04 / Nosso portfólio
               </span>
             </div>
 
@@ -417,9 +417,9 @@ export default function HomePage() {
             </h2>
 
             <p className="mt-7 max-w-[590px] text-sm leading-7 text-white/50 sm:text-base sm:leading-8">
-              ConheÃ§a projetos desenvolvidos pela NORTH GROUP, explore
-              soluÃ§Ãµes digitais e veja como transformamos ideias em
-              experiÃªncias online.
+              Conheça projetos desenvolvidos pela NORTH GROUP, explore
+              soluções digitais e veja como transformamos ideias em
+              experiências online.
             </p>
           </div>
 
@@ -434,7 +434,7 @@ export default function HomePage() {
                 NORTH GROUP / PROJECTS
               </span>
               <span className="text-2xl text-white/50 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-white">
-                â†—
+                ↗
               </span>
             </div>
 
@@ -443,7 +443,7 @@ export default function HomePage() {
                 Explore nossos projetos.
               </h3>
               <p className="mt-4 inline-flex items-center gap-3 text-[10px] font-medium uppercase tracking-[0.16em] text-white/70 transition group-hover:text-white">
-                ConheÃ§a nosso portfÃ³lio <span>â†’</span>
+                Conheça nosso portfólio <span>→</span>
               </p>
             </div>
           </a>
@@ -464,13 +464,13 @@ export default function HomePage() {
           <div className="flex items-center gap-3">
             <span className="h-px w-7 bg-white/70" />
             <span className="text-[9px] uppercase tracking-[0.25em] text-white/45">
-              O prÃ³ximo passo comeÃ§a aqui
+              O próximo passo começa aqui
             </span>
           </div>
           <h2 className="mt-9 max-w-[1000px] text-5xl font-light leading-[0.95] tracking-[-0.075em] sm:text-7xl lg:text-8xl">
-            SUA PRÃ“XIMA
+            SUA PRÓXIMA
             <br />
-            <span className="text-white/35">FASE COMEÃ‡A</span>
+            <span className="text-white/35">FASE COMEÇA</span>
             <br />
             AGORA.
           </h2>
@@ -487,7 +487,7 @@ export default function HomePage() {
             >
               Iniciar uma conversa
               <span className="text-base transition-transform group-hover:translate-x-1">
-                â†’
+                →
               </span>
             </a>
           </div>
@@ -510,7 +510,7 @@ export default function HomePage() {
 
             <div className="flex flex-wrap gap-x-6 gap-y-4 text-[10px] text-white/45">
               <Link href="/privacidade" className="transition hover:text-white">
-                PolÃ­tica de Privacidade
+                Política de Privacidade
               </Link>
               <Link href="/termos" className="transition hover:text-white">
                 Termos de Uso
@@ -521,17 +521,17 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="transition hover:text-white"
               >
-                PortfÃ³lio â†—
+                Portfólio ↗
               </a>
             </div>
           </div>
 
           <div className="mt-8 flex flex-col gap-3 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-[9px] tracking-[0.05em] text-white/30">
-              Â© 2026 NORTH GROUP. Todos os direitos reservados.
+              © 2026 NORTH GROUP. Todos os direitos reservados.
             </p>
             <p className="text-[9px] tracking-[0.05em] text-white/30">
-              EstratÃ©gia para negÃ³cios que querem evoluir.
+              Estratégia para negócios que querem evoluir.
             </p>
           </div>
         </div>
@@ -539,5 +539,4 @@ export default function HomePage() {
     </main>
   );
 }
-
 
