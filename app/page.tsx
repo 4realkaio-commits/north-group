@@ -1,4 +1,4 @@
-
+﻿
 import Link from "next/link";
 
 const portfolioUrl = "https://north-group-portfolio.vercel.app/";
@@ -6,24 +6,24 @@ const portfolioUrl = "https://north-group-portfolio.vercel.app/";
 const services = [
   {
     number: "01",
-    title: "Sites e sistemas",
+    title: "Sites, Sistemas & Software",
     description:
-      "Sites e sistemas personalizados para fortalecer sua presença digital e otimizar operações.",
+      "Desenvolvimento de sites, sistemas e softwares personalizados para fortalecer sua presença digital e otimizar operações.",
     tag: "TECNOLOGIA E DESENVOLVIMENTO",
   },
   {
     number: "02",
-    title: "IA e automação",
+    title: "Automação & Inteligência",
     description:
-      "Soluções inteligentes para automatizar tarefas e tornar processos mais eficientes.",
-    tag: "INTELIGÊNCIA ARTIFICIAL",
+      "Automações e soluções inteligentes para reduzir tarefas manuais e tornar processos mais eficientes.",
+    tag: "AUTOMAÇÃO E TECNOLOGIA",
   },
   {
     number: "03",
-    title: "Marketing e posicionamento",
+    title: "Growth & Estratégia",
     description:
-      "Estratégias digitais para fortalecer sua marca e ampliar sua presença no mercado.",
-    tag: "MARCA E CRESCIMENTO",
+      "Estratégias de posicionamento, aquisição de clientes e performance para impulsionar o crescimento da empresa.",
+    tag: "ESTRATÉGIA E CRESCIMENTO",
   },
   {
     number: "04",
@@ -146,7 +146,7 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-10 max-w-[470px] text-sm leading-7 text-white/55 sm:text-base sm:leading-8">
-              A NORTH GROUP oferece criação de sites profissionais, desenvolvimento de sistemas personalizados, automação de processos e estratégias de marketing digital para empresas que querem crescer.
+              A NORTH GROUP conecta tecnologia, desenvolvimento de software, automação e Growth & Estratégia para ajudar empresas a crescer com mais estrutura, eficiência e direção.
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -538,4 +538,5 @@ export default function HomePage() {
     </main>
   );
 }
+
 
