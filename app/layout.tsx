@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -72,6 +73,7 @@ const organizationSchema = {
   description:
     "Criação de sites profissionais, desenvolvimento de sistemas personalizados, automações e estratégias de marketing digital para empresas.",
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -79,6 +81,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <Script
+        id="google-tag-manager"
+        src="https://www.googletagmanager.com/gtm.js?id=GTM-WMRW95PK"
+        strategy="beforeInteractive"
+      />
+
+      <Script id="google-tag-manager-init" strategy="beforeInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+        `}
+      </Script>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
