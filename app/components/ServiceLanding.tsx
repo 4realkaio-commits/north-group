@@ -1,4 +1,5 @@
 ﻿import Link from "next/link";
+import Image from "next/image";
 
 type ServiceLandingProps = {
   eyebrow: string;
@@ -62,8 +63,15 @@ export default function ServiceLanding({
     <main className="min-h-screen bg-[#050505] text-white">
       <header className="border-b border-white/10 px-6 py-6">
         <div className="mx-auto flex max-w-6xl items-center justify-between">
-          <Link href={en ? "/en" : "/"} className="text-sm font-semibold tracking-[0.25em]">
-            NORTH GROUP
+          <Link href={en ? "/en" : "/"} className="flex items-center">
+            <Image
+              src="/logo.jpg"
+              alt="NORTH GROUP"
+              width={180}
+              height={60}
+              priority
+              className="h-12 w-auto object-contain"
+            />
           </Link>
           <a
             href={whatsappUrl}
