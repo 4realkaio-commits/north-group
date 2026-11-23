@@ -1,5 +1,30 @@
 ﻿
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "NORTH GROUP | Assessoria de Crescimento Empresarial",
+  description:
+    "Tecnologia, desenvolvimento de software, sites, sistemas personalizados, automação e Growth & Estratégia para empresas que buscam crescer com estrutura e eficiência.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "NORTH GROUP | Assessoria de Crescimento Empresarial",
+    description:
+      "Conectamos tecnologia, software, automação e estratégia para ajudar empresas a crescer.",
+    url: "/",
+    siteName: "NORTH GROUP",
+    locale: "pt_BR",
+    type: "website",
+    images: [
+      {
+        url: "/logo.jpg",
+        alt: "NORTH GROUP",
+      },
+    ],
+  },
+};
 
 const portfolioUrl = "https://north-group-portfolio.vercel.app/";
 
@@ -538,5 +563,6 @@ export default function HomePage() {
     </main>
   );
 }
+
 
 
